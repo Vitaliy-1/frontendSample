@@ -1,0 +1,340 @@
+
+/* Отображение всего в виде блоков, хз насколько оно надо */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,notmain,nav,section,summary,sublist{display:block;}
+
+
+
+
+
+/* Убрать верхнюю границу */
+
+body{margin:0;}
+
+
+
+/* Шрифт */
+
+body{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	line-height:1.428571429;
+	color:#333333;
+	background-color:#ffffff;
+	}
+	
+h5.label {
+	background: linear-gradient(#eee, #fff);
+	border-radius: 7px;
+}
+	
+h1.document-title {
+	font-size:22px;
+	text-align:center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	color:#2f2d43;
+	padding:1px;
+	border-radius: 7px;
+}
+h1.document-title:hover {
+	background:linear-gradient(#2f2d43, #493e8e);
+	color:#fff;
+}
+
+h4.callout-title {
+	display: block;
+	border-radius: 7px;
+	font-size: 13px;
+	color: #fff;
+	padding:4px;
+	background: linear-gradient(#2f2d43, #493e8e);
+}
+
+h2.main-title {
+	color: #2f2d43;
+	border-radius: 7px;
+	padding:4px;
+	background: linear-gradient(#eee, #fff);
+	text-align: center;
+}
+
+div.metadata-group p{
+	display: block;
+	border-radius: 7px;
+	color: black;
+	font-size: 17px;
+	padding: 4px;
+	background: linear-gradient(#eee, #fff);
+	
+}
+
+div.metadata.two-column.table div.row div.cell{
+	padding: 0px;
+	display: table;
+}
+
+/* Убрать подчеркивание гиперссылок */
+
+a{color:#428bca;text-decoration:none;}
+
+
+/* Параметры контейнера для основного текста */ 
+
+
+
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
+.content {
+	text-align: justify;
+	background-color: #fffff9;
+	
+	
+}
+	
+.nav.nav-pills.nav-stacked.version1 {
+	height: 95%;
+	overflow: auto;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+a[title=H3] { 
+   font-size:12px; 
+   margin-left: 7px;
+   }
+
+
+
+
+
+/* Ширина текста, минимальная */ 
+
+
+@media (max-width:500px) {
+	.sidebar{display:none;}
+	.content{width:100%; padding: 0 2px;
+	}
+	
+}
+
+@media (min-width:501px) and (max-width:768px){ 
+
+	
+	.sidebar{display:none}
+	.content{width:100%;
+	padding: 0 2px;
+	
+		}
+	}
+	
+@media(min-width:769px) and (max-width:1200px){
+	.sidebar{width:20%}
+	.content{width:80%;padding: 0 2px; 
+	padding-left:5%;
+	padding-right:5%;
+	}
+	
+	}
+
+@media(min-width:1201px){
+	.sidebar{width:20%}
+	.content{width:80%;padding: 0 20px; 
+	padding-left:15%;
+	padding-right:15%;
+	}
+	
+	}
+		
+
+/* Ширина текста, средня; соотношение размеров меню навигации и основного текста*/
+
+
+/* Ширина основного текста для больших экранов
+*/
+
+
+
+/* Отображение всего меню навигации
+*/
+
+.sidebar{
+	position:fixed;
+	height:100%;
+	left:0;
+	padding-top:25px;
+	
+	background: linear-gradient(#2f2d43, #493e8e); 
+    
+	border:2px solid #40367c;
+	border-right:1px solid #3d3935}
+
+/* Выравнивание меню навигации
+*/
+
+.sidebar .nav{
+	margin-bottom:0;
+	padding-left:0;
+	list-style:none;
+	margin-top:30px}
+
+	
+/* Расстояние между кнопками меню
+*/
+.sidebar .nav>li>a{position:relative;display:block;padding:7px 15px;}
+
+/* Подсветка кнопок
+*/
+.sidebar .sublist>li>a:hover,.sublist>li>a:focus{text-decoration:none;background-color:#eeeeee;}
+
+.sidebar .sublist li a{
+    display:block;
+    padding-right:2px;
+    font-size:12px;
+}
+
+.sidebar .sublist>li>a{color:#fff}
+.sidebar .sublist>li>a:hover{color:#000}
+
+.sidebar .nav>li>a:hover,.nav>li>a:focus{text-decoration:none;background-color:#eeeeee;}
+.sidebar .nav-pills>li>a{color:#fff}
+.sidebar .nav-pills>li>a:hover{color:#000}
+
+
+
+
+/* Общие параметры текста; расстояние между словами
+*/
+
+html{overflow-y:scroll}
+body p{line-height:22px}
+
+/* Параметры текста заглавной части (зазвания журнала и статьи, анотации, имена авторов, аффилиация)
+*/
+.front{
+	font-weight:500;
+	color:#333;
+	font-size:16px}
+
+
+/* Подзаголовки
+*/
+
+
+
+
+
+
+/* Параметры контента; разграничение меню навигации и основного текста 
+*/
+.content{
+	
+	float:right;
+	
+	}
+
+
+/*  Выравнивание нумерации в списке литературы   */
+
+div.table { display: table }
+div.metadata.table { width: 100% }
+div.row { display: table-row }
+
+div.cell {
+	 display: table-cell; padding-left: 0.25em; padding-right: 0.25em }
+
+
+h5.label {
+	font-size:16px;
+	color:#2f2d43;
+}
+
+table {
+    border-collapse: collapse;
+	width: 100%;
+	
+}
+
+table, td {
+    border: 1px solid ;
+	padding: 5px;
+    text-align: left;
+}
+
+th {
+	border: 1px solid black;
+	padding: 5px;
+    text-align: center;
+	
+}
+
+div.table-wrap.panel {
+	background-color: #fff;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+@media(max-width:768px){
+	
+	div.table-wrap.panel{padding:1px}
+	
+	}
+
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:hover {
+	
+	color:#4CAF50;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.body a:hover + ref-content cell {
+    display: block;
+}
+
+div.ref-list.table div.row {
+	display:block;
+	background:linear-gradient(#eee, #fff);
+	border-radius: 7px;
+}
+
+div.ref-list.table div.row:hover {
+	color: #4CAF50;
+}
+
+div.fig.panel {
+	background-color: #fff;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+@media(max-width:768px){
+	
+	div.fig.panel{padding:1px}
+	
+	}
+div.fig.panel img {
+	display: block;
+    margin: auto;
+}
+
+
+	
+}
